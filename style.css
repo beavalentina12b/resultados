@@ -17,11 +17,13 @@
     --memoria-bg: #ffb21e;
     --verbal-bg: #00bb8f;
     --visual-bg: #1125d6;
+    --very-ligth-blue: #ecf2ff;
 
 }
 
 body {
     font-size: 1.6rem;
+    background: var(--very-ligth-blue);
 }
 
 .resultado {
@@ -73,6 +75,7 @@ color: var(--ligth-blue);
 
 .resumo {
     padding: 2.4rem 3.2rem;
+    background: var(--white);
 }
 
 .resumo h2{
@@ -130,4 +133,18 @@ color: var(--ligth-blue);
     border-radius: 12.8rem;
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+@media (min-width: 736px){
+
+    body {
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        max-width: 736px;
+    }
 }
